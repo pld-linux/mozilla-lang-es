@@ -8,7 +8,7 @@ Version:	1.7.5
 #%%define	bver	b
 # use "Alpha", "Beta" or %{nil}
 %define	fver	%{nil}
-Release:	%{?bver:0.%{bver}.}0.1
+Release:	%{?bver:0.%{bver}.}1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/mozilla/l10n/lang/moz%{shortversion}/mozilla-%{version}.es-ES.langpack.xpi
@@ -23,7 +23,6 @@ Requires(post,postun):	mozilla <= 5:%{version}
 Requires(post,postun):	textutils
 Requires:	mozilla >= 5:%{version}%{?bver}
 Requires:	mozilla <= 5:%{version}
-Obsoletes:	mozilla-Lang-PL
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # %{_libdir}/mozilla/chrome is symlink pointing to the following
