@@ -1,6 +1,6 @@
 Summary:	Spanish resources for Mozilla
 Summary(es):	Recursos españoles para Mozilla
-Summary(pl):	Hiszpanskie pliki jêzykowe dla Mozilli
+Summary(pl):	Hiszpañskie pliki jêzykowe dla Mozilli
 Name:		mozilla-lang-es
 Version:	1.7.5
 %define		shortversion	1.75
@@ -35,7 +35,7 @@ Spanish resources for Mozilla.
 Recursos españoles para Mozilla.
 
 %description -l pl
-Hiszpanskie pliki jêzykowe dla Mozilli.
+Hiszpañskie pliki jêzykowe dla Mozilli.
 
 %prep
 
