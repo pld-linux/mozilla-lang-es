@@ -2,8 +2,8 @@ Summary:	Spanish resources for Mozilla
 Summary(es):	Recursos españoles para Mozilla
 Summary(pl):	Hiszpañskie pliki jêzykowe dla Mozilli
 Name:		mozilla-lang-es
-Version:	1.7.6
-%define		shortversion	1.76
+Version:	1.7.11
+%define		shortversion	1.711
 # use "a", "b", or undefined
 #%%define	bver	b
 # use "Alpha", "Beta" or %{nil}
@@ -11,12 +11,14 @@ Version:	1.7.6
 Release:	%{?bver:0.%{bver}.}1
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://ftp.mozilla.org/pub/mozilla.org/mozilla/l10n/lang/moz%{shortversion}/mozilla-%{version}.es-ES.langpack.xpi
-# Source0-md5:	de9b0fdc457b5be9c9f8a08f9427b51b
-Source1:	http://ftp.mozilla.org/pub/mozilla.org/mozilla/l10n/lang/moz%{shortversion}/mozilla-%{version}.es-ES.regpack.xpi
-# Source1-md5:	563209e00e7bcce2afe376ebc756a365
+#Source0:	http://ftp.mozilla.org/pub/mozilla.org/mozilla/l10n/lang/moz%{shortversion}/mozilla-%{version}.es-ES.langpack.xpi
+Source0:	http://nave.hispalinux.es/productos/mozilla/1.7/descargas/langeses.xpi
+# Source0-md5:	f1df12eb8d5bb72edd6c007dd7865526
+#Source1:	http://ftp.mozilla.org/pub/mozilla.org/mozilla/l10n/lang/moz%{shortversion}/mozilla-%{version}.es-ES.regpack.xpi
+Source1:	http://nave.hispalinux.es/productos/mozilla/1.7/descargas/reges.xpi
+# Source1-md5:	b48bffd598434e1e45b776c47bf2bc73
 Source2:	%{name}-installed-chrome.txt
-URL:		http://mozilla.dnsalias..org/
+URL:		http://nave.hispalinux.es/
 BuildRequires:	unzip
 Requires(post,postun):	mozilla >= 5:%{version}%{?bver}
 Requires(post,postun):	mozilla <= 5:%{version}
@@ -73,5 +75,4 @@ cat *-installed-chrome.txt >installed-chrome.txt
 %{_chromedir}/es-unix.jar
 %{_chromedir}/ES.jar
 %{_chromedir}/%{name}-installed-chrome.txt
-#no additional plugins (for now)
-#%{_datadir}/mozilla/searchplugins/*
+%{_datadir}/mozilla/searchplugins/*
