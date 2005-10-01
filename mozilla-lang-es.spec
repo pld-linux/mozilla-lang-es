@@ -2,8 +2,8 @@ Summary:	Spanish resources for Mozilla
 Summary(es):	Recursos españoles para Mozilla
 Summary(pl):	Hiszpañskie pliki jêzykowe dla Mozilli
 Name:		mozilla-lang-es
-Version:	1.7.11
-%define		shortversion	1.711
+Version:	1.7.12
+#define		shortversion	1.712
 # use "a", "b", or undefined
 #%%define	bver	b
 # use "Alpha", "Beta" or %{nil}
@@ -13,10 +13,10 @@ License:	GPL
 Group:		X11/Applications/Networking
 #Source0:	http://ftp.mozilla.org/pub/mozilla.org/mozilla/l10n/lang/moz%{shortversion}/mozilla-%{version}.es-ES.langpack.xpi
 Source0:	http://nave.hispalinux.es/productos/mozilla/1.7/descargas/langeses.xpi
-# Source0-md5:	f1df12eb8d5bb72edd6c007dd7865526
+# Source0-md5:	2bea0532bf5268fa550e420f69383520
 #Source1:	http://ftp.mozilla.org/pub/mozilla.org/mozilla/l10n/lang/moz%{shortversion}/mozilla-%{version}.es-ES.regpack.xpi
 Source1:	http://nave.hispalinux.es/productos/mozilla/1.7/descargas/reges.xpi
-# Source1-md5:	b48bffd598434e1e45b776c47bf2bc73
+# Source1-md5:	90278f390bcc455bf3293da47acc7257
 Source2:	%{name}-installed-chrome.txt
 URL:		http://nave.hispalinux.es/
 BuildRequires:	unzip
