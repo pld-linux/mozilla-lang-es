@@ -3,28 +3,27 @@ Summary(es):	Recursos españoles para Mozilla
 Summary(pl):	Hiszpañskie pliki jêzykowe dla Mozilli
 Name:		mozilla-lang-es
 Version:	1.7.12
-#define		shortversion	1.712
+%define		mozversion	1.7.13
+%define		shortversion	1.712
 # use "a", "b", or undefined
 #%%define	bver	b
 # use "Alpha", "Beta" or %{nil}
 %define	fver	%{nil}
-Release:	%{?bver:0.%{bver}.}1
+Release:	%{?bver:0.%{bver}.}2
 License:	GPL
 Group:		X11/Applications/Networking
-#Source0:	http://ftp.mozilla.org/pub/mozilla.org/mozilla/l10n/lang/moz%{shortversion}/mozilla-%{version}.es-ES.langpack.xpi
-Source0:	http://nave.hispalinux.es/productos/mozilla/1.7/descargas/langeses.xpi
+Source0:	http://ftp.mozilla.org/pub/mozilla.org/mozilla/l10n/lang/moz%{shortversion}/mozilla-%{version}.es-ES.langpack.xpi
 # Source0-md5:	2bea0532bf5268fa550e420f69383520
-#Source1:	http://ftp.mozilla.org/pub/mozilla.org/mozilla/l10n/lang/moz%{shortversion}/mozilla-%{version}.es-ES.regpack.xpi
-Source1:	http://nave.hispalinux.es/productos/mozilla/1.7/descargas/reges.xpi
+Source1:	http://ftp.mozilla.org/pub/mozilla.org/mozilla/l10n/lang/moz%{shortversion}/mozilla-%{version}.es-ES.regpack.xpi
 # Source1-md5:	90278f390bcc455bf3293da47acc7257
 Source2:	%{name}-installed-chrome.txt
 URL:		http://nave.hispalinux.es/
 BuildRequires:	unzip
-Requires(post,postun):	mozilla >= 5:%{version}%{?bver}
-Requires(post,postun):	mozilla <= 5:%{version}
+Requires(post,postun):	mozilla >= 5:%{mozversion}%{?bver}
+Requires(post,postun):	mozilla <= 5:%{mozversion}
 Requires(post,postun):	textutils
-Requires:	mozilla >= 5:%{version}%{?bver}
-Requires:	mozilla <= 5:%{version}
+Requires:	mozilla >= 5:%{mozversion}%{?bver}
+Requires:	mozilla <= 5:%{mozversion}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
