@@ -1,6 +1,6 @@
 Summary:	Spanish resources for Mozilla
-Summary(es.UTF-8):   Recursos españoles para Mozilla
-Summary(pl.UTF-8):   Hiszpańskie pliki językowe dla Mozilli
+Summary(es.UTF-8):	Recursos españoles para Mozilla
+Summary(pl.UTF-8):	Hiszpańskie pliki językowe dla Mozilli
 Name:		mozilla-lang-es
 Version:	1.7.12
 %define		mozversion	1.7.13
